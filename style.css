@@ -1,0 +1,251 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: rgb(0,0,0);
+}
+
+/* Navbar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 10vh;
+    background-color: black;
+}
+
+.menu{            /* "Botão Responsivo" */
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 28px;
+    position: absolute;
+    top: 24px;
+    right: 50px;
+    font-weight: bold;
+    display: none;
+}
+
+.container{
+    display: flex;
+    width: 80%;
+    margin-left: 200px;
+    /* height: 80px; */
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.logo1{
+    width: 140px;
+    margin: 0 -100px;
+    cursor: pointer;
+}
+
+.navbar-itens{
+    display: flex;
+    flex-direction: row;
+    list-style: none;  
+}
+
+.navbar-itens li{
+    padding: 0 20px;
+    font-weight: 600;
+    padding: .5rem 1.5rem;
+    font-size: .95rem;
+    color: white;
+}
+
+.navbar-item:hover{
+    color: rgb(74, 255, 74);
+    cursor: pointer;
+}
+
+.navbar-item-traço{
+    cursor: default;
+    font-weight: 100;
+}
+
+#showcase{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #2941AB;
+}
+
+.showcase-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#1ed760;
+}
+
+.showcase-container h1{
+    font-size: 9rem;
+    transform: translateX(0%);
+    letter-spacing: -8px;
+    margin-top: 120px;
+}
+
+.showcase-container span{
+    display: block;
+    transform: translateX(0%);
+    margin-top: -40px;
+}
+
+.showcase-container p{
+    font-weight: 600;
+}
+
+.btn-primary{
+    border-radius: 100vw;
+    border: none;
+    padding: 13px 30px;
+    background-color: #1ed760;
+    color: rgba(41,65,171,255);
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.btn-primary:hover{
+    transform: scale(1.04);
+}
+
+/* footer */
+
+#footer{
+    background-color: black;
+    color: white;
+    min-height: 60vh;
+    width: 100%;
+    padding: 5.5rem 0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    place-items: center;
+    align-items: flex-start;
+}
+
+.logo2{
+    height: 40px;
+    display: flex;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.web-links-container{
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-class{
+    margin: 0 0 0 64px;
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.footer-item-top{
+    font-weight: bold;
+    color: grey;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: .05rem;
+}
+
+.footer-item{
+    margin: 25px 0px;
+}
+
+/* Footer socials */
+
+.socials{
+    display: flex;
+    /* margin-right: 10rem; */
+}
+
+.socials i{
+    font-size: 30px;
+    font-weight: 100;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #222326;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+}
+
+.socials i:hover,
+.footer-item:hover,
+.footer-items-fim:hover{
+    color: rgb(74, 255, 74);
+    cursor: pointer;
+}
+
+.footer-fim{
+    font-size: .7rem;
+    margin-top: 6rem;
+    list-style-type: none;
+    color: rgb(156, 152, 152);
+    display: flex;
+}
+
+.footer-fim li{
+    margin: 0 10px;
+}
+
+.rights{
+    color: grey;
+    margin-top: 70px;
+    /* font-size: .7rem; */
+}
+
+.rights p {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+    font-size: .8rem;
+}
+
+.country i{
+    margin: 1px 5px 0 0;
+}
+
+@media (max-width:1000px) {
+    .container{
+        position: absolute;
+        top: 7vh;
+        right: 0;
+        width: 59vh;
+        height: 100vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .menu{
+        display: flex;
+    }
+
+    .navbar-itens{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
